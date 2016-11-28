@@ -22,7 +22,6 @@ public class IGInfoUse : System.Web.Services.WebService
     }
 
     [WebMethod]
-	[ScriptMethod(UseHttpPost = true)]
     public int addlikeIG(int igid, int memberid)
     {        
         IGFactory igf = new IGFactory();
@@ -40,7 +39,6 @@ public class IGInfoUse : System.Web.Services.WebService
     }
 
     [WebMethod]
-	[ScriptMethod(UseHttpPost = true)]
     public string sentMessage(int memberid, int igid, string message)
     {
         string messageArea = "";
